@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "HotStar VolReducer",
+  "version": "1.0",
+  "description": "HotStar Vol Reducer",
+  "content_scripts": [
+    {
+      "matches": ["*://*.hotstar.com/*"],
+      "run_at": "document_start",
+      "js": ["volscript.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["volscript.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "tabs",
+    "*://*.hotstar.com/*"
+  ]
+}
