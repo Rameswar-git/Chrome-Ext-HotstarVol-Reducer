@@ -5,7 +5,7 @@
   "description": "HotStar Vol Reducer",
   "content_scripts": [
     {
-      "matches": ["*://*.hotstar.com/*","*://*.iplt20.com/*","*://*.cricket.com.au/*"],
+      "matches": ["*://*.hotstar.com/*","*://*.iplt20.com/*","*://*.cricket.com.au/*","*://*.sxyprn.com/*"],
       "run_at": "document_start",
       "js": ["volscript.js"]
     }
